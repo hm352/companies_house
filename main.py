@@ -1,7 +1,7 @@
 '''Main python process that accesses and processes stream data '''
 from json import loads
 
-from connections.connect import connect, check_stream
+from connect import connect, check_stream
 from timepoint import get_timepoint
 from store import start_pid_log
 

@@ -3,7 +3,9 @@
 import os
 
 import requests
-# from time import sleep
+from time import sleep
+
+from timepoint import get_timepoint
 
 
 def connect(timepoint):
@@ -20,8 +22,23 @@ def connect(timepoint):
     return response
 
 
-def check_stream():
+def check_stream(stream):
     ''' checks the connection status code
     and reconnects if not
     '''
-    
+    status = stream.status_code
+    timepoint = get_timepoint()
+
+    if status == 401:
+        print('unathroised, check api key')
+
+    if status == 429:
+        sleep(60)
+        print('waited')
+        return connect(timepoint)
+
+    if status == 416:
+        print('timepoint invalid')
+        return connect(None)
+
+    return stream

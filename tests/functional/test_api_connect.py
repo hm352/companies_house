@@ -1,6 +1,6 @@
 '''Test fault resilence of API connection code '''
 
-from connections.connect import connect
+from connect import connect
 
 
 def test_connect():

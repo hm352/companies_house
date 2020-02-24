@@ -1,9 +1,9 @@
 ''' connects to streams using python requests
 '''
 import os
+from time import sleep
 
 import requests
-from time import sleep
 
 from timepoint import get_timepoint
 

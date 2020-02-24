@@ -14,5 +14,5 @@ if __name__ == '__main__':
         if line:
             data = loads(line).pop('data')
             company_id = data.get('company_number')
-            with open(f'data/{company_id}', 'wb') as record:
+            with open(f'/app/data/{company_id}', 'wb') as record:
                 record.write(line)

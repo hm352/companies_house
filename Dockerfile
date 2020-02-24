@@ -4,7 +4,6 @@ COPY . /app
 
 RUN apt-get update \
 && apt-get install -y procps \
-&& crontab /app/cronjob \
 && pip install -r /app/requirements.txt 
 
 CMD bash /app/is_up.sh

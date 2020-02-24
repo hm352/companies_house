@@ -6,4 +6,4 @@ RUN apt-get update \
 && apt-get install -y procps \
 && pip install -r /app/requirements.txt 
 
-CMD bash /app/is_up.sh
+CMD bash /app/start.sh

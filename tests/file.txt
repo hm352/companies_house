@@ -1,0 +1,2 @@
+USER         PID  %CPU %MEM      VSZ    RSS   TT  STAT STARTED      TIME COMMAND
+henrymaher 17045   0.0  0.3  4318108  21768 s001  S+   12:03PM   0:00.66 python main.py

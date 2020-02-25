@@ -1,4 +1,4 @@
-# Header Text #
+# Data Intro #
 
 Each entry in this folder is related to an individual company
 
